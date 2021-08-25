@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/myTitle"
+        android:text="myTitle"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:textSize="40sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/shape_corner">
+
+        <LinearLayout
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+            <ImageView
+                android:background="@drawable/ic_baseline_person_24"
+                android:layout_gravity="center_vertical"
+                android:layout_height="36dp"
+                android:layout_width="36dp"/>
+            <EditText
+                android:id="@+id/EnterName"
+                android:hint="用户名"
+                android:inputType="textPersonName"
+
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:background="@drawable/ic_baseline_lock_24"
+                android:layout_gravity="center_vertical"
+                android:layout_height="36dp"
+                android:layout_width="36dp"/>
+            <EditText
+                android:id="@+id/EnterPassword"
+                android:hint="密码"
+                android:inputType="textPassword"
+
+
+                android:layout_height="wrap_content"
+                android:layout_width="250dp"/>
+        </LinearLayout>
+    </LinearLayout>>
+
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <Button
+            android:text="发出通知"
+            android:id="@+id/onSend"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:text="取消通知"
+            android:id="@+id/onCancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</LinearLayout>
